@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -46,6 +45,23 @@
         ul {
             list-style-type: square;
         }
+        /* Estilização para deixar o vídeo do YouTube responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
         footer {
             text-align: center;
             padding: 1rem 0;
@@ -69,6 +85,14 @@
         </section>
 
         <section>
+            <h2>Documentário / Vídeo sobre Dragões</h2>
+            <p>Assista abaixo a um conteúdo especial sobre a história e os mitos dessas criaturas:</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ENrR0VDjWs0?si=YgWQxXWr1kpIQRt1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
             <h2>Principais Tipos de Dragões</h2>
             <p>Embora apareçam em várias mitologias, as duas vertentes mais famosas são:</p>
             <ul>
@@ -79,7 +103,7 @@
 
         <section>
             <h2>Habilidades Conhecidas</h2>
-            <p>Nas histórias e RPGs, os dragões costumam apresentar características impressionantes:</p>
+            <p>Nas histórias e RPGs, os dragões custumam apresentar características impressionantes:</p>
             <ul>
                 <li>Sopro elemental (fogo, gelo, ácido ou eletricidade);</li>
                 <li>Escamas quase impenetráveis;</li>
