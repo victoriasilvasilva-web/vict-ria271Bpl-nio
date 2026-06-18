@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -75,6 +74,23 @@
             padding: 1rem;
             margin: 1.5rem 0;
         }
+        /* Container para tornar o vídeo do YouTube responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção de tela 16:9 */
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
         footer {
             text-align: center;
             padding: 1.5rem 0;
@@ -97,6 +113,14 @@
         <section>
             <h2>Quem é Eren Yeager?</h2>
             <p>Eren Yeager é o protagonista principal da série de mangá e anime <em>Attack on Titan</em> (Shingeki no Kyojin), criada por Hajime Isayama. Nascido na Muralha Maria, no Distrito de Shiganshina, sua vida muda drasticamente após a queda da muralha provocada pelos Titãs Colossal e Blindado.</p>
+        </section>
+
+        <section>
+            <h2>Vídeo Relacionado</h2>
+            <p>Assista abaixo ao conteúdo em vídeo sobre a trajetória e os mistérios envolvendo o personagem:</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EsR68ySHE0s?si=-G4fsZhXWdrRD2BJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section>
